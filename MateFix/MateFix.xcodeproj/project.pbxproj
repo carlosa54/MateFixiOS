@@ -13,6 +13,8 @@
 		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
 		07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC81AB7366800190F5C /* LaunchScreen.xib */; };
 		07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DD51AB7366800190F5C /* MateFixTests.swift */; };
+		40DB8AD11AB74E7F005C0D4A /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB8ACF1AB74E7F005C0D4A /* btn.png */; };
+		40DB8AD21AB74E7F005C0D4A /* MateFixLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		07872DCF1AB7366800190F5C /* MateFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DD41AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DD51AB7366800190F5C /* MateFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateFixTests.swift; sourceTree = "<group>"; };
+		40DB8ACF1AB74E7F005C0D4A /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn.png; path = Images.xcassets/btn.png; sourceTree = "<group>"; };
+		40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MateFixLogo2.png; path = Images.xcassets/MateFixLogo2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		07872DBD1AB7366800190F5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40DB8ACF1AB74E7F005C0D4A /* btn.png */,
+				40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */,
 				07872DBE1AB7366800190F5C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07872DC51AB7366800190F5C /* Main.storyboard in Resources */,
+				40DB8AD21AB74E7F005C0D4A /* MateFixLogo2.png in Resources */,
 				07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */,
+				40DB8AD11AB74E7F005C0D4A /* btn.png in Resources */,
 				07872DC71AB7366800190F5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +415,7 @@
 				07872DDB1AB7366800190F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07872DDC1AB7366800190F5C /* Build configuration list for PBXNativeTarget "MateFixTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				07872DDE1AB7366800190F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
