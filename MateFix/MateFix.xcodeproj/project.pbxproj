@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
+		07872DC21AB7366800190F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DC11AB7366800190F5C /* ViewController.swift */; };
+		07872DC51AB7366800190F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC31AB7366800190F5C /* Main.storyboard */; };
+		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
+		07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC81AB7366800190F5C /* LaunchScreen.xib */; };
+		07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DD51AB7366800190F5C /* MateFixTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07872DD01AB7366800190F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07872DB21AB7366800190F5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07872DB91AB7366800190F5C;
+			remoteInfo = MateFix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07872DBE1AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07872DBF1AB7366800190F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07872DC11AB7366800190F5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07872DC41AB7366800190F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07872DC61AB7366800190F5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07872DC91AB7366800190F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		07872DCF1AB7366800190F5C /* MateFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07872DD41AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07872DD51AB7366800190F5C /* MateFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateFixTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07872DB71AB7366800190F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07872DCC1AB7366800190F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07872DB11AB7366800190F5C = {
+			isa = PBXGroup;
+			children = (
+				07872DBC1AB7366800190F5C /* MateFix */,
+				07872DD21AB7366800190F5C /* MateFixTests */,
+				07872DBB1AB7366800190F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07872DBB1AB7366800190F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07872DBA1AB7366800190F5C /* MateFix.app */,
+				07872DCF1AB7366800190F5C /* MateFixTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07872DBC1AB7366800190F5C /* MateFix */ = {
+			isa = PBXGroup;
+			children = (
+				07872DBF1AB7366800190F5C /* AppDelegate.swift */,
+				07872DC11AB7366800190F5C /* ViewController.swift */,
+				07872DC31AB7366800190F5C /* Main.storyboard */,
+				07872DC61AB7366800190F5C /* Images.xcassets */,
+				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
+				07872DBD1AB7366800190F5C /* Supporting Files */,
+			);
+			path = MateFix;
+			sourceTree = "<group>";
+		};
+		07872DBD1AB7366800190F5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07872DBE1AB7366800190F5C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07872DD21AB7366800190F5C /* MateFixTests */ = {
+			isa = PBXGroup;
+			children = (
+				07872DD51AB7366800190F5C /* MateFixTests.swift */,
+				07872DD31AB7366800190F5C /* Supporting Files */,
+			);
+			path = MateFixTests;
+			sourceTree = "<group>";
+		};
+		07872DD31AB7366800190F5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07872DD41AB7366800190F5C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07872DB91AB7366800190F5C /* MateFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07872DD91AB7366800190F5C /* Build configuration list for PBXNativeTarget "MateFix" */;
+			buildPhases = (
+				07872DB61AB7366800190F5C /* Sources */,
+				07872DB71AB7366800190F5C /* Frameworks */,
+				07872DB81AB7366800190F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MateFix;
+			productName = MateFix;
+			productReference = 07872DBA1AB7366800190F5C /* MateFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07872DCE1AB7366800190F5C /* MateFixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07872DDC1AB7366800190F5C /* Build configuration list for PBXNativeTarget "MateFixTests" */;
+			buildPhases = (
+				07872DCB1AB7366800190F5C /* Sources */,
+				07872DCC1AB7366800190F5C /* Frameworks */,
+				07872DCD1AB7366800190F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07872DD11AB7366800190F5C /* PBXTargetDependency */,
+			);
+			name = MateFixTests;
+			productName = MateFixTests;
+			productReference = 07872DCF1AB7366800190F5C /* MateFixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07872DB21AB7366800190F5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Carlos Ramirez";
+				TargetAttributes = {
+					07872DB91AB7366800190F5C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					07872DCE1AB7366800190F5C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 07872DB91AB7366800190F5C;
+					};
+				};
+			};
+			buildConfigurationList = 07872DB51AB7366800190F5C /* Build configuration list for PBXProject "MateFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07872DB11AB7366800190F5C;
+			productRefGroup = 07872DBB1AB7366800190F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07872DB91AB7366800190F5C /* MateFix */,
+				07872DCE1AB7366800190F5C /* MateFixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07872DB81AB7366800190F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07872DC51AB7366800190F5C /* Main.storyboard in Resources */,
+				07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */,
+				07872DC71AB7366800190F5C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07872DCD1AB7366800190F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07872DB61AB7366800190F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07872DC21AB7366800190F5C /* ViewController.swift in Sources */,
+				07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07872DCB1AB7366800190F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07872DD11AB7366800190F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07872DB91AB7366800190F5C /* MateFix */;
+			targetProxy = 07872DD01AB7366800190F5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07872DC31AB7366800190F5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07872DC41AB7366800190F5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07872DC81AB7366800190F5C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07872DC91AB7366800190F5C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07872DD71AB7366800190F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07872DD81AB7366800190F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07872DDA1AB7366800190F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MateFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07872DDB1AB7366800190F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MateFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07872DDD1AB7366800190F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MateFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MateFix.app/MateFix";
+			};
+			name = Debug;
+		};
+		07872DDE1AB7366800190F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MateFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MateFix.app/MateFix";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07872DB51AB7366800190F5C /* Build configuration list for PBXProject "MateFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07872DD71AB7366800190F5C /* Debug */,
+				07872DD81AB7366800190F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07872DD91AB7366800190F5C /* Build configuration list for PBXNativeTarget "MateFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07872DDA1AB7366800190F5C /* Debug */,
+				07872DDB1AB7366800190F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07872DDC1AB7366800190F5C /* Build configuration list for PBXNativeTarget "MateFixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07872DDD1AB7366800190F5C /* Debug */,
+				07872DDE1AB7366800190F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07872DB21AB7366800190F5C /* Project object */;
+}
