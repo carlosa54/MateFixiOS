@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MateFix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-I3-kde">
+                                <rect key="frame" x="130" y="11" width="341" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="0oY-kL-O3e"/>
+                                    <constraint firstAttribute="width" constant="341" id="FPy-YP-biu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-6z-oVB">
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="C1B-WN-uQU"/>
+                                    <constraint firstAttribute="height" constant="55" id="FEm-LN-rmK"/>
+                                </constraints>
+                                <state key="normal" title="Sing in">
+                                    <color key="titleColor" red="0.92549019607843142" green="0.53725490196078429" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="rNs-IH-JJ1">
+                                <rect key="frame" x="180" y="150" width="240" height="394"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="394" id="JhZ-28-qIy"/>
+                                    <constraint firstAttribute="width" constant="240" id="fRw-RE-4h2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe up to begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xI-mu-dmm">
+                                <rect key="frame" x="218" y="128" width="165" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="j76-Os-gyy"/>
+                                    <constraint firstAttribute="height" constant="14" id="zpB-iC-8PV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-Vc-ZyR">
+                                <rect key="frame" x="218" y="64" width="165" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="dYV-3r-vMT"/>
+                                    <constraint firstAttribute="width" constant="165" id="wfi-zD-VKE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="mxp-6z-oVB" secondAttribute="centerX" id="5Gd-E5-Sqe"/>
+                            <constraint firstAttribute="centerX" secondItem="Zge-Vc-ZyR" secondAttribute="centerX" id="ACW-Xu-a7l"/>
+                            <constraint firstAttribute="centerX" secondItem="1xI-mu-dmm" secondAttribute="centerX" id="IMj-MT-fG9"/>
+                            <constraint firstItem="Zge-Vc-ZyR" firstAttribute="top" secondItem="Sth-I3-kde" secondAttribute="bottom" constant="-5" id="KDV-6I-ECk"/>
+                            <constraint firstAttribute="centerX" secondItem="Sth-I3-kde" secondAttribute="centerX" id="ROl-la-Dn3"/>
+                            <constraint firstItem="mxp-6z-oVB" firstAttribute="top" secondItem="rNs-IH-JJ1" secondAttribute="bottom" constant="1" id="SD5-Nt-gc3"/>
+                            <constraint firstItem="mxp-6z-oVB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="aRM-bb-dfw"/>
+                            <constraint firstItem="1xI-mu-dmm" firstAttribute="top" secondItem="Sth-I3-kde" secondAttribute="bottom" constant="59" id="hSl-TI-Qbb"/>
+                            <constraint firstItem="rNs-IH-JJ1" firstAttribute="top" secondItem="1xI-mu-dmm" secondAttribute="bottom" constant="8" id="oQz-E6-RH5"/>
+                            <constraint firstAttribute="centerX" secondItem="rNs-IH-JJ1" secondAttribute="centerX" id="pBt-I6-R32"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8qe-gv-oKZ" appends="YES" id="UOV-ca-nim"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="iphoneStart" destination="rNs-IH-JJ1" id="0QS-em-BBj"/>
+                        <outlet property="singInBtn" destination="mxp-6z-oVB" id="77l-fs-Jn1"/>
+                        <outlet property="swipeLbl" destination="1xI-mu-dmm" id="fAn-H0-fwd"/>
+                        <outlet property="welcomeLbl" destination="Zge-Vc-ZyR" id="vSx-AO-4gl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="8qe-gv-oKZ">
+                    <connections>
+                        <action selector="singupGesture:" destination="BYZ-38-t0r" id="PiV-Zc-RoG"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="MateFixLogo2.png" width="421" height="149"/>
+        <image name="iPhone.png" width="608" height="1020"/>
+    </resources>
 </document>
