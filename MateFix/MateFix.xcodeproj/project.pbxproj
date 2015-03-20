@@ -8,14 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
-		07872DC21AB7366800190F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DC11AB7366800190F5C /* ViewController.swift */; };
 		07872DC51AB7366800190F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC31AB7366800190F5C /* Main.storyboard */; };
 		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
 		07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC81AB7366800190F5C /* LaunchScreen.xib */; };
 		07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DD51AB7366800190F5C /* MateFixTests.swift */; };
-		4069019D1AB78ABC00703EE8 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4069019C1AB78ABC00703EE8 /* iPhone.png */; };
-		40DB8AD11AB74E7F005C0D4A /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB8ACF1AB74E7F005C0D4A /* btn.png */; };
-		40DB8AD21AB74E7F005C0D4A /* MateFixLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */; };
+		4054655C1ABCC18B00D2832F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655B1ABCC18B00D2832F /* LoginViewController.swift */; };
+		4054657B1ABCC4A200D2832F /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655E1ABCC4A200D2832F /* AsyncButton.swift */; };
+		4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655F1ABCC4A200D2832F /* AsyncImageView.swift */; };
+		4054657D1ABCC4A200D2832F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465601ABCC4A200D2832F /* BlurView.swift */; };
+		4054657E1ABCC4A200D2832F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465611ABCC4A200D2832F /* DesignableButton.swift */; };
+		4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465621ABCC4A200D2832F /* DesignableImageView.swift */; };
+		405465801ABCC4A200D2832F /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465631ABCC4A200D2832F /* DesignableLabel.swift */; };
+		405465811ABCC4A200D2832F /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465641ABCC4A200D2832F /* DesignableTabBarController.swift */; };
+		405465821ABCC4A200D2832F /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465651ABCC4A200D2832F /* DesignableTextField.swift */; };
+		405465831ABCC4A200D2832F /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465661ABCC4A200D2832F /* DesignableTextView.swift */; };
+		405465841ABCC4A200D2832F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465671ABCC4A200D2832F /* DesignableView.swift */; };
+		405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465681ABCC4A200D2832F /* ImageLoader.swift */; };
+		405465861ABCC4A200D2832F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 405465691ABCC4A200D2832F /* Info.plist */; };
+		405465871ABCC4A200D2832F /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054656A1ABCC4A200D2832F /* KeyboardLayoutConstraint.swift */; };
+		405465881ABCC4A200D2832F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054656B1ABCC4A200D2832F /* LoadingView.swift */; };
+		405465891ABCC4A200D2832F /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4054656C1ABCC4A200D2832F /* LoadingView.xib */; };
+		4054658A1ABCC4A200D2832F /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054656D1ABCC4A200D2832F /* Misc.swift */; };
+		4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054656E1ABCC4A200D2832F /* SoundPlayer.swift */; };
+		4054658C1ABCC4A200D2832F /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465701ABCC4A200D2832F /* Spring.swift */; };
+		4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465711ABCC4A200D2832F /* SpringAnimation.swift */; };
+		4054658E1ABCC4A200D2832F /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465721ABCC4A200D2832F /* SpringButton.swift */; };
+		4054658F1ABCC4A200D2832F /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465731ABCC4A200D2832F /* SpringImageView.swift */; };
+		405465901ABCC4A200D2832F /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465741ABCC4A200D2832F /* SpringLabel.swift */; };
+		405465911ABCC4A200D2832F /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465751ABCC4A200D2832F /* SpringTextField.swift */; };
+		405465921ABCC4A200D2832F /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465761ABCC4A200D2832F /* SpringTextView.swift */; };
+		405465931ABCC4A200D2832F /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465771ABCC4A200D2832F /* SpringView.swift */; };
+		405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465781ABCC4A200D2832F /* TransitionManager.swift */; };
+		405465951ABCC4A200D2832F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465791ABCC4A200D2832F /* TransitionZoom.swift */; };
+		405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054657A1ABCC4A200D2832F /* UnwindSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +57,42 @@
 		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DBE1AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DBF1AB7366800190F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07872DC11AB7366800190F5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07872DC41AB7366800190F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07872DC61AB7366800190F5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		07872DC91AB7366800190F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		07872DCF1AB7366800190F5C /* MateFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DD41AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DD51AB7366800190F5C /* MateFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateFixTests.swift; sourceTree = "<group>"; };
-		4069019C1AB78ABC00703EE8 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = Images.xcassets/iPhone.png; sourceTree = "<group>"; };
-		40DB8ACF1AB74E7F005C0D4A /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn.png; path = Images.xcassets/btn.png; sourceTree = "<group>"; };
-		40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MateFixLogo2.png; path = Images.xcassets/MateFixLogo2.png; sourceTree = "<group>"; };
+		4054655B1ABCC18B00D2832F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4054655E1ABCC4A200D2832F /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		4054655F1ABCC4A200D2832F /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		405465601ABCC4A200D2832F /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		405465611ABCC4A200D2832F /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		405465621ABCC4A200D2832F /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		405465631ABCC4A200D2832F /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		405465641ABCC4A200D2832F /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		405465651ABCC4A200D2832F /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		405465661ABCC4A200D2832F /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		405465671ABCC4A200D2832F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		405465681ABCC4A200D2832F /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		405465691ABCC4A200D2832F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4054656A1ABCC4A200D2832F /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		4054656B1ABCC4A200D2832F /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4054656C1ABCC4A200D2832F /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		4054656D1ABCC4A200D2832F /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		4054656E1ABCC4A200D2832F /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		4054656F1ABCC4A200D2832F /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		405465701ABCC4A200D2832F /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		405465711ABCC4A200D2832F /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		405465721ABCC4A200D2832F /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		405465731ABCC4A200D2832F /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		405465741ABCC4A200D2832F /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		405465751ABCC4A200D2832F /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		405465761ABCC4A200D2832F /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		405465771ABCC4A200D2832F /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		405465781ABCC4A200D2832F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		405465791ABCC4A200D2832F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		4054657A1ABCC4A200D2832F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +116,7 @@
 		07872DB11AB7366800190F5C = {
 			isa = PBXGroup;
 			children = (
+				4054655D1ABCC4A200D2832F /* Spring */,
 				07872DBC1AB7366800190F5C /* MateFix */,
 				07872DD21AB7366800190F5C /* MateFixTests */,
 				07872DBB1AB7366800190F5C /* Products */,
@@ -83,8 +135,7 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
-				07872DBF1AB7366800190F5C /* AppDelegate.swift */,
-				07872DC11AB7366800190F5C /* ViewController.swift */,
+				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
 				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
@@ -96,9 +147,7 @@
 		07872DBD1AB7366800190F5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4069019C1AB78ABC00703EE8 /* iPhone.png */,
-				40DB8ACF1AB74E7F005C0D4A /* btn.png */,
-				40DB8AD01AB74E7F005C0D4A /* MateFixLogo2.png */,
+				07872DBF1AB7366800190F5C /* AppDelegate.swift */,
 				07872DBE1AB7366800190F5C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -119,6 +168,42 @@
 				07872DD41AB7366800190F5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4054655D1ABCC4A200D2832F /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				4054655E1ABCC4A200D2832F /* AsyncButton.swift */,
+				4054655F1ABCC4A200D2832F /* AsyncImageView.swift */,
+				405465601ABCC4A200D2832F /* BlurView.swift */,
+				405465611ABCC4A200D2832F /* DesignableButton.swift */,
+				405465621ABCC4A200D2832F /* DesignableImageView.swift */,
+				405465631ABCC4A200D2832F /* DesignableLabel.swift */,
+				405465641ABCC4A200D2832F /* DesignableTabBarController.swift */,
+				405465651ABCC4A200D2832F /* DesignableTextField.swift */,
+				405465661ABCC4A200D2832F /* DesignableTextView.swift */,
+				405465671ABCC4A200D2832F /* DesignableView.swift */,
+				405465681ABCC4A200D2832F /* ImageLoader.swift */,
+				405465691ABCC4A200D2832F /* Info.plist */,
+				4054656A1ABCC4A200D2832F /* KeyboardLayoutConstraint.swift */,
+				4054656B1ABCC4A200D2832F /* LoadingView.swift */,
+				4054656C1ABCC4A200D2832F /* LoadingView.xib */,
+				4054656D1ABCC4A200D2832F /* Misc.swift */,
+				4054656E1ABCC4A200D2832F /* SoundPlayer.swift */,
+				4054656F1ABCC4A200D2832F /* Spring.h */,
+				405465701ABCC4A200D2832F /* Spring.swift */,
+				405465711ABCC4A200D2832F /* SpringAnimation.swift */,
+				405465721ABCC4A200D2832F /* SpringButton.swift */,
+				405465731ABCC4A200D2832F /* SpringImageView.swift */,
+				405465741ABCC4A200D2832F /* SpringLabel.swift */,
+				405465751ABCC4A200D2832F /* SpringTextField.swift */,
+				405465761ABCC4A200D2832F /* SpringTextView.swift */,
+				405465771ABCC4A200D2832F /* SpringView.swift */,
+				405465781ABCC4A200D2832F /* TransitionManager.swift */,
+				405465791ABCC4A200D2832F /* TransitionZoom.swift */,
+				4054657A1ABCC4A200D2832F /* UnwindSegue.swift */,
+			);
+			path = Spring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,12 +286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405465861ABCC4A200D2832F /* Info.plist in Resources */,
 				07872DC51AB7366800190F5C /* Main.storyboard in Resources */,
-				40DB8AD21AB74E7F005C0D4A /* MateFixLogo2.png in Resources */,
-				4069019D1AB78ABC00703EE8 /* iPhone.png in Resources */,
 				07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */,
-				40DB8AD11AB74E7F005C0D4A /* btn.png in Resources */,
 				07872DC71AB7366800190F5C /* Images.xcassets in Resources */,
+				405465891ABCC4A200D2832F /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +308,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07872DC21AB7366800190F5C /* ViewController.swift in Sources */,
+				405465951ABCC4A200D2832F /* TransitionZoom.swift in Sources */,
+				405465931ABCC4A200D2832F /* SpringView.swift in Sources */,
+				4054655C1ABCC18B00D2832F /* LoginViewController.swift in Sources */,
+				4054658A1ABCC4A200D2832F /* Misc.swift in Sources */,
+				4054658F1ABCC4A200D2832F /* SpringImageView.swift in Sources */,
+				405465911ABCC4A200D2832F /* SpringTextField.swift in Sources */,
 				07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */,
+				4054657D1ABCC4A200D2832F /* BlurView.swift in Sources */,
+				405465901ABCC4A200D2832F /* SpringLabel.swift in Sources */,
+				4054657B1ABCC4A200D2832F /* AsyncButton.swift in Sources */,
+				405465831ABCC4A200D2832F /* DesignableTextView.swift in Sources */,
+				4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */,
+				4054657E1ABCC4A200D2832F /* DesignableButton.swift in Sources */,
+				4054658E1ABCC4A200D2832F /* SpringButton.swift in Sources */,
+				4054658C1ABCC4A200D2832F /* Spring.swift in Sources */,
+				405465801ABCC4A200D2832F /* DesignableLabel.swift in Sources */,
+				405465881ABCC4A200D2832F /* LoadingView.swift in Sources */,
+				405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */,
+				405465841ABCC4A200D2832F /* DesignableView.swift in Sources */,
+				405465821ABCC4A200D2832F /* DesignableTextField.swift in Sources */,
+				405465811ABCC4A200D2832F /* DesignableTabBarController.swift in Sources */,
+				405465921ABCC4A200D2832F /* SpringTextView.swift in Sources */,
+				405465871ABCC4A200D2832F /* KeyboardLayoutConstraint.swift in Sources */,
+				4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */,
+				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
+				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
+				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
+				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MateFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -361,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MateFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
