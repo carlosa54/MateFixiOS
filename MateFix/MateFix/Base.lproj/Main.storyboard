@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -24,7 +24,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMq-Sx-RC1">
                                         <rect key="frame" x="94" y="8" width="48" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -163,7 +163,7 @@
                                     <constraint firstAttribute="height" constant="34" id="NiR-gO-e3e"/>
                                     <constraint firstAttribute="width" constant="307" id="bXJ-9F-acm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -227,7 +227,7 @@
                                     <constraint firstAttribute="width" constant="307" id="YKA-AX-Y7b"/>
                                 </constraints>
                                 <string key="text">By signing up, you agree to our MateFix Terms and that you have read our Privacy Policy. You may receive SMS notifications from MateFix and can opt-out at any time.</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -292,7 +292,7 @@
                                     <constraint firstAttribute="width" constant="307" id="Qnz-Mh-geT"/>
                                     <constraint firstAttribute="height" constant="105" id="n40-tW-qEg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -413,13 +413,13 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set up your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCN-ZJ-eN6">
                                 <rect key="frame" x="59" y="275" width="206" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmQ-7b-LiZ">
                                 <rect key="frame" x="16" y="250" width="292" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -435,7 +435,7 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIg-bl-88k">
                                 <rect key="frame" x="99" y="128" width="123" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -493,7 +493,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="276" height="207"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_services" translatesAutoresizingMaskIntoConstraints="NO" id="WRg-ux-EdP">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_services" translatesAutoresizingMaskIntoConstraints="NO" id="WRg-ux-EdP">
                                 <rect key="frame" x="9" y="15" width="258" height="178"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -502,7 +502,6 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="WRg-ux-EdP" secondAttribute="centerX" id="jm5-4i-UYR"/>
                             <constraint firstAttribute="centerY" secondItem="WRg-ux-EdP" secondAttribute="centerY" id="yq4-1D-nfU"/>
@@ -537,7 +536,6 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="W0b-MC-GUL" secondAttribute="centerY" id="NgY-uy-Fe7"/>
                             <constraint firstAttribute="centerX" secondItem="W0b-MC-GUL" secondAttribute="centerX" id="RNx-ck-dpv"/>
@@ -571,7 +569,6 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="04P-aN-SIQ" secondAttribute="centerY" id="309-uG-ZMi"/>
                             <constraint firstAttribute="centerX" secondItem="04P-aN-SIQ" secondAttribute="centerX" id="MTX-1C-zhf"/>
@@ -643,18 +640,8 @@
                                     <constraint firstAttribute="width" constant="123" id="EUd-sq-R3a"/>
                                     <constraint firstAttribute="height" constant="36" id="o7A-z0-VoH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join MateFix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkH-YK-ojg">
-                                <rect key="frame" x="95" y="434" width="131" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="WtG-7I-IsM"/>
-                                    <constraint firstAttribute="height" constant="21" id="XPP-08-ieI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.70196078431372544" green="0.41176470588235292" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-fZ-21r">
@@ -674,8 +661,18 @@
                                     <segue destination="5rB-NM-eD4" kind="embed" id="lZP-Ab-75C"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join MateFix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkH-YK-ojg">
+                                <rect key="frame" x="95" y="434" width="131" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="WtG-7I-IsM"/>
+                                    <constraint firstAttribute="height" constant="21" id="XPP-08-ieI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.70196078431372544" green="0.41176470588235292" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-Dg-sTY">
-                                <rect key="frame" x="141" y="350" width="39" height="37"/>
+                                <rect key="frame" x="141" y="380" width="39" height="37"/>
                                 <connections>
                                     <action selector="didChangeValue:" destination="m3n-h8-VGO" eventType="valueChanged" id="RHp-rS-z5I"/>
                                 </connections>
