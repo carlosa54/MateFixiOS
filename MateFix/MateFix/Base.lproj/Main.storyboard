@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -226,7 +226,7 @@
                                     <constraint firstAttribute="height" constant="51" id="TMW-Ro-YAG"/>
                                     <constraint firstAttribute="width" constant="307" id="YKA-AX-Y7b"/>
                                 </constraints>
-                                <string key="text">By signing up, you agree to our MateFix Terms and that you have read our Privacy Policy. You may recive SMS notifications from MateFix and can opt-out at any time.</string>
+                                <string key="text">By signing up, you agree to our MateFix Terms and that you have read our Privacy Policy. You may receive SMS notifications from MateFix and can opt-out at any time.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -484,12 +484,12 @@
         <!--View Controller-->
         <scene sceneID="EZy-4d-IRn">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5rB-NM-eD4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" automaticallyAdjustsScrollViewInsets="NO" id="5rB-NM-eD4" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lVM-Qw-yA8"/>
                         <viewControllerLayoutGuide type="bottom" id="MTp-DY-LA2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RNv-PX-oXk">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="first" id="RNv-PX-oXk">
                         <rect key="frame" x="0.0" y="0.0" width="276" height="207"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -509,15 +509,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qyk-Qu-hUW"/>
+                    <connections>
+                        <segue destination="AyL-8P-flD" kind="show" id="VRd-it-fZo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nij-Ke-elX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="980.5"/>
+            <point key="canvasLocation" x="133" y="647.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bab-hb-In9">
             <objects>
-                <viewController id="AyL-8P-flD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="third" id="AyL-8P-flD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p5o-cj-Odr"/>
                         <viewControllerLayoutGuide type="bottom" id="6gV-my-UzN"/>
@@ -540,15 +543,18 @@
                             <constraint firstAttribute="centerX" secondItem="W0b-MC-GUL" secondAttribute="centerX" id="RNx-ck-dpv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Ute-99-9Bs" kind="show" id="yXT-ys-mKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbK-AJ-74w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="980.5"/>
+            <point key="canvasLocation" x="514" y="647.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="D3z-TN-BfR">
             <objects>
-                <viewController id="Ute-99-9Bs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="Ute-99-9Bs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I1n-F4-92U"/>
                         <viewControllerLayoutGuide type="bottom" id="km8-z2-jOW"/>
@@ -574,26 +580,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEO-ZO-gYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="980.5"/>
+            <point key="canvasLocation" x="908" y="647.5"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="slT-sL-0bg">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="oQK-Mm-iXS" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="5rB-NM-eD4" kind="show" id="o9O-gV-Zzt"/>
-                        <segue destination="AyL-8P-flD" kind="show" id="Qcu-hP-iXF"/>
-                        <segue destination="Ute-99-9Bs" kind="show" id="uHy-5j-7IQ"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Txz-Fe-6FL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="279" y="557.5"/>
-        </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ATK-5q-HaB">
             <objects>
-                <viewController id="m3n-h8-VGO" sceneMemberID="viewController">
+                <viewController id="m3n-h8-VGO" customClass="MainViewController" customModule="MateFix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B5X-v3-8ji"/>
                         <viewControllerLayoutGuide type="bottom" id="gSF-Im-k1f"/>
@@ -621,6 +613,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="u8a-Vr-1xA" kind="show" id="GYi-HM-zp0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXY-bi-7z4" customClass="DesignableButton" customModule="MateFix" customModuleProvider="target">
                                 <rect key="frame" x="201" y="518" width="103" height="30"/>
@@ -652,16 +647,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hII-Ku-nT7">
-                                <rect key="frame" x="22" y="180" width="276" height="207"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="276" id="H1d-4p-3Ib"/>
-                                    <constraint firstAttribute="height" constant="207" id="xCB-CP-BDx"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="oQK-Mm-iXS" kind="embed" id="e3l-fb-LNj"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join MateFix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkH-YK-ojg">
                                 <rect key="frame" x="95" y="434" width="131" height="21"/>
                                 <constraints>
@@ -679,6 +664,22 @@
                                     <constraint firstAttribute="height" constant="100" id="o7p-YW-U5u"/>
                                 </constraints>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hII-Ku-nT7">
+                                <rect key="frame" x="22" y="180" width="276" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="H1d-4p-3Ib"/>
+                                    <constraint firstAttribute="height" constant="207" id="xCB-CP-BDx"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="5rB-NM-eD4" kind="embed" id="lZP-Ab-75C"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-Dg-sTY">
+                                <rect key="frame" x="141" y="350" width="39" height="37"/>
+                                <connections>
+                                    <action selector="didChangeValue:" destination="m3n-h8-VGO" eventType="valueChanged" id="RHp-rS-z5I"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -700,7 +701,12 @@
                             <constraint firstItem="hII-Ku-nT7" firstAttribute="top" secondItem="UDB-Ha-qLG" secondAttribute="bottom" constant="16" id="vvj-jd-wxj"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="container" destination="hII-Ku-nT7" id="JP0-Tz-RBv"/>
+                        <outlet property="pageControl" destination="F8U-Dg-sTY" id="PFs-H4-jlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW1-3U-gKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -716,4 +722,7 @@
         <image name="img_services" width="330" height="330"/>
         <image name="keyIcon" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GYi-HM-zp0"/>
+    </inferredMetricsTieBreakers>
 </document>

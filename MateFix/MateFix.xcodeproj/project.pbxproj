@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07442B4D1AC100D000C51939 /* MainViewController.swift */; };
 		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
 		07872DC51AB7366800190F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC31AB7366800190F5C /* Main.storyboard */; };
 		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DBE1AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DBF1AB7366800190F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
+				07442B4D1AC100D000C51939 /* MainViewController.swift */,
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
@@ -321,6 +324,7 @@
 				405465831ABCC4A200D2832F /* DesignableTextView.swift in Sources */,
 				4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */,
 				4054657E1ABCC4A200D2832F /* DesignableButton.swift in Sources */,
+				07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */,
 				4054658E1ABCC4A200D2832F /* SpringButton.swift in Sources */,
 				4054658C1ABCC4A200D2832F /* Spring.swift in Sources */,
 				405465801ABCC4A200D2832F /* DesignableLabel.swift in Sources */,
