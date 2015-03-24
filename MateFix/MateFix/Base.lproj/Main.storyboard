@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m3n-h8-VGO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -68,7 +68,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.54117647058823526" blue="0.066666666666666666" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.54117647058823526" blue="0.066666666666666666" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="drg-nL-N3R"/>
                                     <constraint firstAttribute="height" constant="220" id="lhG-gJ-PCL"/>
@@ -90,17 +90,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="singup" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-qK-m9b">
-                                <rect key="frame" x="115" y="499" width="91" height="41"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="lro-Nn-yaq"/>
-                                    <constraint firstAttribute="height" constant="41" id="m0n-0Y-wkY"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="EA9-xF-utf" appends="YES" id="dkA-Mr-wzZ"/>
-                                </connections>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="5vV-Wr-eUv" customClass="DesignableImageView" customModule="MateFix" customModuleProvider="target">
                                 <rect key="frame" x="68" y="20" width="200" height="100"/>
                                 <constraints>
@@ -112,27 +101,385 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E94-tP-MeA" customClass="DesignableButton" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="42" y="499" width="236" height="30"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.54117647058823526" blue="0.066666666666666666" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="4ly-96-Ni0"/>
+                                    <constraint firstAttribute="height" constant="30" id="hsb-Uj-G6g"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="u8a-Vr-1xA" kind="presentation" modalTransitionStyle="crossDissolve" id="fF2-E4-c55"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="cmC-5f-Moz" secondAttribute="centerX" id="3N7-KJ-6Oe"/>
-                            <constraint firstItem="iCY-4c-wUW" firstAttribute="top" secondItem="qdd-qK-m9b" secondAttribute="bottom" constant="28" id="7h5-YF-yVd"/>
                             <constraint firstItem="cmC-5f-Moz" firstAttribute="top" secondItem="5vV-Wr-eUv" secondAttribute="bottom" constant="54" id="BgO-rj-sHa"/>
                             <constraint firstItem="5vV-Wr-eUv" firstAttribute="top" secondItem="fFc-l0-M6L" secondAttribute="bottom" id="F7W-AQ-1em"/>
                             <constraint firstItem="iCY-4c-wUW" firstAttribute="top" secondItem="ZvV-v0-pJz" secondAttribute="bottom" id="JaB-2K-fL4"/>
                             <constraint firstItem="ZvV-v0-pJz" firstAttribute="top" secondItem="Bxi-UA-vl0" secondAttribute="top" id="Rse-oO-OGv"/>
-                            <constraint firstAttribute="centerX" secondItem="qdd-qK-m9b" secondAttribute="centerX" id="crW-dw-3SE"/>
                             <constraint firstAttribute="trailing" secondItem="ZvV-v0-pJz" secondAttribute="trailing" id="hcP-fk-hbf"/>
                             <constraint firstAttribute="centerX" secondItem="5vV-Wr-eUv" secondAttribute="centerX" constant="-8" id="jVx-lK-xBC"/>
+                            <constraint firstItem="iCY-4c-wUW" firstAttribute="top" secondItem="E94-tP-MeA" secondAttribute="bottom" constant="39" id="oGG-x4-LqQ"/>
                             <constraint firstItem="ZvV-v0-pJz" firstAttribute="leading" secondItem="Bxi-UA-vl0" secondAttribute="leading" id="tAs-3L-NgA"/>
+                            <constraint firstItem="E94-tP-MeA" firstAttribute="leading" secondItem="cmC-5f-Moz" secondAttribute="leading" id="wH5-4B-tgE"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKh-sK-Zge" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="EA9-xF-utf"/>
             </objects>
             <point key="canvasLocation" x="739" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hBS-AD-R8H">
+            <objects>
+                <viewController id="u8a-Vr-1xA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KOx-IO-1iD"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHC-l1-yeX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WrP-9X-K4N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7Gt-AQ-mj2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll use this email when you log in and if you ever need to reset your password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqR-2a-qat" customClass="DesignableLabel" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="7" y="242" width="307" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="NiR-gO-e3e"/>
+                                    <constraint firstAttribute="width" constant="307" id="bXJ-9F-acm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-Su-O8l" customClass="DesignableButton" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="36" y="305" width="248" height="30"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.54117647059999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="1jo-Vd-QyU"/>
+                                    <constraint firstAttribute="height" constant="30" id="uKQ-H8-TzD"/>
+                                </constraints>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="1n7-4s-xJb" kind="presentation" modalTransitionStyle="crossDissolve" id="1E1-pf-MpW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-Hj-WAY" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="36" y="204" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="97q-CK-IYo"/>
+                                    <constraint firstAttribute="height" constant="30" id="VzU-Ud-gzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-CO-3Iv" customClass="DesignableImageView" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="60" y="20" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fNq-Oa-uP4"/>
+                                    <constraint firstAttribute="width" constant="200" id="kLC-zw-mTH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3N-Qw-qdO" customClass="DesignableLabel" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="7" y="109" width="307" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="TMW-Ro-YAG"/>
+                                    <constraint firstAttribute="width" constant="307" id="YKA-AX-Y7b"/>
+                                </constraints>
+                                <string key="text">By signing up, you agree to our MateFix Terms and that you have read our Privacy Policy. You may recive SMS notifications from MateFix and can opt-out at any time.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rFC-Su-O8l" firstAttribute="top" secondItem="mqR-2a-qat" secondAttribute="bottom" constant="29" id="0Y5-cm-JoJ"/>
+                            <constraint firstItem="7Gt-AQ-mj2" firstAttribute="top" secondItem="WrP-9X-K4N" secondAttribute="top" id="2q7-7w-o37"/>
+                            <constraint firstItem="mqR-2a-qat" firstAttribute="top" secondItem="WWY-Hj-WAY" secondAttribute="bottom" constant="8" id="6JC-mE-N4K"/>
+                            <constraint firstItem="yHC-l1-yeX" firstAttribute="top" secondItem="7Gt-AQ-mj2" secondAttribute="bottom" id="9LX-Vd-byC"/>
+                            <constraint firstAttribute="centerX" secondItem="WWY-Hj-WAY" secondAttribute="centerX" id="ASE-gQ-fad"/>
+                            <constraint firstItem="yHC-l1-yeX" firstAttribute="top" secondItem="rFC-Su-O8l" secondAttribute="bottom" constant="233" id="BbX-Gi-TSK"/>
+                            <constraint firstAttribute="centerX" secondItem="P3N-Qw-qdO" secondAttribute="centerX" id="Htr-lX-fCn"/>
+                            <constraint firstItem="mqR-2a-qat" firstAttribute="leading" secondItem="P3N-Qw-qdO" secondAttribute="leading" id="Jcy-Tj-Pbo"/>
+                            <constraint firstItem="P3N-Qw-qdO" firstAttribute="top" secondItem="GeM-CO-3Iv" secondAttribute="bottom" constant="-11" id="OPZ-iW-gWn"/>
+                            <constraint firstItem="WWY-Hj-WAY" firstAttribute="top" secondItem="P3N-Qw-qdO" secondAttribute="bottom" constant="44" id="Vfh-Q4-5ZZ"/>
+                            <constraint firstAttribute="centerX" secondItem="rFC-Su-O8l" secondAttribute="centerX" id="WMo-qH-0eQ"/>
+                            <constraint firstItem="GeM-CO-3Iv" firstAttribute="top" secondItem="KOx-IO-1iD" secondAttribute="bottom" id="ZuP-BO-CWR"/>
+                            <constraint firstAttribute="trailing" secondItem="7Gt-AQ-mj2" secondAttribute="trailing" id="wps-SH-2ic"/>
+                            <constraint firstItem="7Gt-AQ-mj2" firstAttribute="leading" secondItem="WrP-9X-K4N" secondAttribute="leading" id="xOc-di-JIY"/>
+                            <constraint firstAttribute="centerX" secondItem="GeM-CO-3Iv" secondAttribute="centerX" id="xn4-zJ-lCw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1o-4L-HAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J1j-cr-lcC">
+            <objects>
+                <viewController id="1n7-4s-xJb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vjp-zq-lQR"/>
+                        <viewControllerLayoutGuide type="bottom" id="dqy-E6-cZ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0FM-Ql-pjC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kww-P0-Lzi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="xlg-Hf-9ML">
+                                <rect key="frame" x="60" y="20" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="64u-nl-j6i"/>
+                                    <constraint firstAttribute="height" constant="100" id="hFA-Sg-FK3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verification code was sent to the email address you provided. Please enter the code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM9-W1-XqJ">
+                                <rect key="frame" x="7" y="113" width="307" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="Qnz-Mh-geT"/>
+                                    <constraint firstAttribute="height" constant="105" id="n40-tW-qEg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oUF-za-qJJ" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="36" y="197" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YKr-hl-WqX"/>
+                                    <constraint firstAttribute="width" constant="248" id="ry8-01-kgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRz-lY-ZDo" customClass="DesignableButton" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="70" y="269" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.54117647059999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jP3-aT-Z0x"/>
+                                    <constraint firstAttribute="width" constant="181" id="ufh-bU-NwK"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pRe-eb-ymk" kind="presentation" modalTransitionStyle="crossDissolve" id="qxP-BM-07G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xlg-Hf-9ML" secondAttribute="centerX" id="05B-gf-gr7"/>
+                            <constraint firstAttribute="centerX" secondItem="oUF-za-qJJ" secondAttribute="centerX" id="CAT-Kf-XDs"/>
+                            <constraint firstAttribute="trailing" secondItem="kww-P0-Lzi" secondAttribute="trailing" id="Qt2-Wi-zdf"/>
+                            <constraint firstItem="kww-P0-Lzi" firstAttribute="top" secondItem="0FM-Ql-pjC" secondAttribute="top" id="Yae-1d-h9N"/>
+                            <constraint firstAttribute="centerY" secondItem="xlg-Hf-9ML" secondAttribute="centerY" constant="214" id="Zdm-V0-9Qo"/>
+                            <constraint firstItem="dqy-E6-cZ7" firstAttribute="top" secondItem="kww-P0-Lzi" secondAttribute="bottom" id="jF3-X8-cJ3"/>
+                            <constraint firstAttribute="centerY" secondItem="PRz-lY-ZDo" secondAttribute="centerY" id="kcg-e2-9c5"/>
+                            <constraint firstAttribute="centerY" secondItem="oUF-za-qJJ" secondAttribute="centerY" constant="72" id="mG2-ht-9TV"/>
+                            <constraint firstAttribute="centerX" secondItem="PRz-lY-ZDo" secondAttribute="centerX" id="msi-XX-eYA"/>
+                            <constraint firstAttribute="centerX" secondItem="FM9-W1-XqJ" secondAttribute="centerX" id="pwn-qa-1Kg"/>
+                            <constraint firstAttribute="centerY" secondItem="FM9-W1-XqJ" secondAttribute="centerY" constant="118.5" id="qx9-XY-M50"/>
+                            <constraint firstItem="kww-P0-Lzi" firstAttribute="leading" secondItem="0FM-Ql-pjC" secondAttribute="leading" id="uMD-BY-aFZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G80-44-0N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xuh-OK-74a">
+            <objects>
+                <viewController id="pRe-eb-ymk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3on-0C-Oul"/>
+                        <viewControllerLayoutGuide type="bottom" id="foi-TQ-FZT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B8z-ar-lFw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hV5-Y1-Jv6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ye-6Y-hCU" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="444" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42q-DZ-o9D" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="406" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJl-hl-uqO" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="368" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Acount Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDa-Bq-E2F" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="74" y="319" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set up your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCN-ZJ-eN6">
+                                <rect key="frame" x="59" y="275" width="206" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmQ-7b-LiZ">
+                                <rect key="frame" x="16" y="250" width="292" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (8 or more)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wG7-Gt-twe" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="225" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIg-bl-88k">
+                                <rect key="frame" x="99" y="128" width="123" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahL-y5-V5s" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="177" y="187" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtM-dg-BoV" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="187" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="eMy-61-O1x">
+                                <rect key="frame" x="60" y="20" width="200" height="100"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YjB-cW-A82" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
+                                <rect key="frame" x="16" y="482" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dp-Al-GE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069" y="41"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EZy-4d-IRn">
@@ -257,17 +604,13 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-dQ-U4n">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="YUM-tM-1hc"/>
-                                    <constraint firstAttribute="height" constant="568" id="oA1-kM-gMh"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKm-Ca-IQH" customClass="DesignableButton" customModule="MateFix" customModuleProvider="target">
                                 <rect key="frame" x="16" y="518" width="103" height="30"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="JQR-09-0aL"/>
-                                    <constraint firstAttribute="width" constant="103" id="OVX-XE-2h6"/>
+                                    <constraint firstAttribute="height" constant="30" id="RgO-KA-scE"/>
+                                    <constraint firstAttribute="width" constant="103" id="pbr-Js-rDf"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,8 +626,8 @@
                                 <rect key="frame" x="201" y="518" width="103" height="30"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kEH-5D-HM1"/>
-                                    <constraint firstAttribute="width" constant="103" id="tKC-4s-CT1"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZR7-QG-ZpS"/>
+                                    <constraint firstAttribute="width" constant="103" id="gIl-wQ-KEA"/>
                                 </constraints>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -296,21 +639,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="ou6-kx-yB5" kind="show" id="0rI-vk-qDN"/>
+                                    <segue destination="ou6-kx-yB5" kind="modal" modalTransitionStyle="crossDissolve" id="0rI-vk-qDN"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-fZ-21r">
-                                <rect key="frame" x="68" y="20" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="C3s-nR-X0W"/>
-                                    <constraint firstAttribute="width" constant="200" id="WvX-01-eoB"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDB-Ha-qLG">
-                                <rect key="frame" x="107" y="128" width="123" height="36"/>
+                                <rect key="frame" x="99" y="128" width="123" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="ojH-Lh-jPr"/>
-                                    <constraint firstAttribute="width" constant="123" id="vZj-vl-cWa"/>
+                                    <constraint firstAttribute="width" constant="123" id="EUd-sq-R3a"/>
+                                    <constraint firstAttribute="height" constant="36" id="o7A-z0-VoH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,28 +655,49 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hII-Ku-nT7">
                                 <rect key="frame" x="22" y="180" width="276" height="207"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="207" id="HbQ-vd-0ju"/>
-                                    <constraint firstAttribute="width" constant="276" id="zUU-Mm-BeP"/>
+                                    <constraint firstAttribute="width" constant="276" id="H1d-4p-3Ib"/>
+                                    <constraint firstAttribute="height" constant="207" id="xCB-CP-BDx"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="oQK-Mm-iXS" kind="embed" id="e3l-fb-LNj"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join MateFix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkH-YK-ojg">
+                                <rect key="frame" x="95" y="434" width="131" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="WtG-7I-IsM"/>
+                                    <constraint firstAttribute="height" constant="21" id="XPP-08-ieI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.70196078431372544" green="0.41176470588235292" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MateFixLogo2@1x" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-fZ-21r">
+                                <rect key="frame" x="60" y="20" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TZa-BZ-Tzz"/>
+                                    <constraint firstAttribute="height" constant="100" id="o7p-YW-U5u"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UDB-Ha-qLG" firstAttribute="top" secondItem="NAg-gc-Jgm" secondAttribute="top" constant="128" id="2D1-5a-pb5"/>
-                            <constraint firstItem="hII-Ku-nT7" firstAttribute="top" secondItem="UDB-Ha-qLG" secondAttribute="bottom" constant="16" id="2bg-qf-p4D"/>
-                            <constraint firstItem="wEe-dQ-U4n" firstAttribute="bottom" secondItem="gSF-Im-k1f" secondAttribute="top" id="3cI-tV-1um"/>
-                            <constraint firstAttribute="centerX" secondItem="hII-Ku-nT7" secondAttribute="centerX" id="4eV-5l-Ug7"/>
-                            <constraint firstAttribute="centerX" secondItem="qoS-fZ-21r" secondAttribute="centerX" constant="-8" id="92u-jk-uav"/>
-                            <constraint firstItem="UDB-Ha-qLG" firstAttribute="top" secondItem="qoS-fZ-21r" secondAttribute="bottom" constant="8" symbolic="YES" id="K8v-ur-QeA"/>
-                            <constraint firstAttribute="centerX" secondItem="GXY-bi-7z4" secondAttribute="centerX" constant="-92.5" id="N0X-U9-GhU"/>
-                            <constraint firstAttribute="centerX" secondItem="wEe-dQ-U4n" secondAttribute="centerX" id="QXP-zj-q7m"/>
-                            <constraint firstItem="GXY-bi-7z4" firstAttribute="baseline" secondItem="xKm-Ca-IQH" secondAttribute="baseline" id="h2g-WO-w6V"/>
-                            <constraint firstAttribute="centerX" secondItem="xKm-Ca-IQH" secondAttribute="centerX" constant="92.5" id="jok-rT-8gI"/>
-                            <constraint firstAttribute="bottom" secondItem="GXY-bi-7z4" secondAttribute="bottom" constant="20" symbolic="YES" id="yYq-u5-vge"/>
-                            <constraint firstAttribute="centerX" secondItem="UDB-Ha-qLG" secondAttribute="centerX" constant="-8.5" id="znI-G9-e4E"/>
+                            <constraint firstItem="GXY-bi-7z4" firstAttribute="baseline" secondItem="xKm-Ca-IQH" secondAttribute="baseline" id="07g-rO-Rlw"/>
+                            <constraint firstAttribute="centerX" secondItem="UDB-Ha-qLG" secondAttribute="centerX" constant="-0.5" id="7ID-fb-zlx"/>
+                            <constraint firstAttribute="centerX" secondItem="dkH-YK-ojg" secondAttribute="centerX" id="HIV-Rv-QZJ"/>
+                            <constraint firstItem="dkH-YK-ojg" firstAttribute="top" secondItem="hII-Ku-nT7" secondAttribute="bottom" constant="47" id="JkP-ib-WJH"/>
+                            <constraint firstAttribute="trailing" secondItem="wEe-dQ-U4n" secondAttribute="trailing" id="MwD-Vx-5Sp"/>
+                            <constraint firstItem="hII-Ku-nT7" firstAttribute="top" secondItem="NAg-gc-Jgm" secondAttribute="top" constant="180" id="Wmq-6D-2qd"/>
+                            <constraint firstItem="UDB-Ha-qLG" firstAttribute="top" secondItem="qoS-fZ-21r" secondAttribute="bottom" constant="8" symbolic="YES" id="Y3Z-2p-c1e"/>
+                            <constraint firstAttribute="centerX" secondItem="qoS-fZ-21r" secondAttribute="centerX" id="e1x-w9-FwH"/>
+                            <constraint firstItem="gSF-Im-k1f" firstAttribute="top" secondItem="wEe-dQ-U4n" secondAttribute="bottom" id="hCE-3f-y4i"/>
+                            <constraint firstAttribute="centerX" secondItem="hII-Ku-nT7" secondAttribute="centerX" id="hrh-Ho-oqE"/>
+                            <constraint firstItem="wEe-dQ-U4n" firstAttribute="top" secondItem="NAg-gc-Jgm" secondAttribute="top" id="lJA-94-ZKV"/>
+                            <constraint firstAttribute="centerX" secondItem="GXY-bi-7z4" secondAttribute="centerX" constant="-92.5" id="nAj-89-zc0"/>
+                            <constraint firstAttribute="bottom" secondItem="GXY-bi-7z4" secondAttribute="bottom" constant="20" symbolic="YES" id="oZh-3c-XTy"/>
+                            <constraint firstItem="wEe-dQ-U4n" firstAttribute="leading" secondItem="NAg-gc-Jgm" secondAttribute="leading" id="tqf-wg-Y7M"/>
+                            <constraint firstAttribute="centerX" secondItem="xKm-Ca-IQH" secondAttribute="centerX" constant="92.5" id="uwW-Ff-TMw"/>
+                            <constraint firstItem="hII-Ku-nT7" firstAttribute="top" secondItem="UDB-Ha-qLG" secondAttribute="bottom" constant="16" id="vvj-jd-wxj"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -358,6 +715,5 @@
         <image name="img_professionals" width="330" height="330"/>
         <image name="img_services" width="330" height="330"/>
         <image name="keyIcon" width="128" height="128"/>
-        <image name="singup" width="113" height="84"/>
     </resources>
 </document>
