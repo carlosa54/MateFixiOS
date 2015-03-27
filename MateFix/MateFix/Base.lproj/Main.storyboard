@@ -139,6 +139,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="mvo-82-Whe"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="1mS-Xs-uAj" id="j1H-c3-mAp"/>
+                        <outlet property="passwordTextField" destination="7i8-Re-IuO" id="jjq-kg-GP4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKh-sK-Zge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
