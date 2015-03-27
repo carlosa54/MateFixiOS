@@ -577,6 +577,7 @@
                         <outlet property="lastNameTextField" destination="ahL-y5-V5s" id="LiM-nB-gua"/>
                         <outlet property="nameTextField" destination="rtM-dg-BoV" id="3Wo-1Y-Nyi"/>
                         <outlet property="passwordTextField" destination="wG7-Gt-twe" id="zCv-s1-FVN"/>
+                        <outlet property="signUpButton" destination="XmN-Gv-tpA" id="Gmf-bh-Uhg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dp-Al-GE8" userLabel="First Responder" sceneMemberID="firstResponder"/>

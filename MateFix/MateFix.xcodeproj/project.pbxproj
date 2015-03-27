@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711666B1AC5FB0C003CA473 /* PKNotification.swift */; };
 		07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07442B4D1AC100D000C51939 /* MainViewController.swift */; };
 		074C6B5A1AC247FE00709BC5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C6B591AC247FE00709BC5 /* SignUpViewController.swift */; };
 		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0711666B1AC5FB0C003CA473 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
 		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074C6B591AC247FE00709BC5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
+				0711666B1AC5FB0C003CA473 /* PKNotification.swift */,
 				07442B4D1AC100D000C51939 /* MainViewController.swift */,
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				074C6B591AC247FE00709BC5 /* SignUpViewController.swift */,
@@ -342,6 +345,7 @@
 				4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */,
 				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
 				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
+				0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */,
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
 				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
 			);

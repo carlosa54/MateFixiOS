@@ -14,8 +14,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
     @IBOutlet weak var emailTextField: DesignableTextField!
+    @IBOutlet weak var signUpButton: DesignableButton!
     
-    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent) {
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
@@ -31,6 +32,8 @@ class SignUpViewController: UIViewController {
     }
     
     func post(params: NSDictionary, url: String, postCompleted : (succeeded: Bool, msg: String) -> ()){
+        
+        PKNotification.loading(true)  // show loading view.
         
         var request = NSMutableURLRequest(URL: NSURL(string: url)!)
         var session = NSURLSession.sharedSession()
@@ -64,7 +67,7 @@ class SignUpViewController: UIViewController {
                 // check and make sure that json has a value using optional binding.
                 if let parseJSON = json {
                     // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-
+                      PKNotification.loading(false) // hide loading view.
                       postCompleted(succeeded: true, msg: "Logged in")
                 }
                 else {
@@ -89,9 +92,9 @@ class SignUpViewController: UIViewController {
         
        var params = ["email":email, "password":password, "first_name":firstName, "last_name": lastName, "about_me": "", "street_1": "Testing 101", "country": "PR", "city": "test", "zip_code": "00667"] as Dictionary<String,String>
         
+            signUpButton.enabled = false
         
-        
-         post(params, url: "https://matefix.herokuapp.com/users/register") { (succeeded: Bool, msg: String) -> () in
+            post(params, url: "https://matefix.herokuapp.com/users/register") { (succeeded: Bool, msg: String) -> () in
             var alert = UIAlertView(title: "Success!", message: msg, delegate: nil, cancelButtonTitle: "Okay.")
             if(succeeded) {
                 alert.title = "Success!"
