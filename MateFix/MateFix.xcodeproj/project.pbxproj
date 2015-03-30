@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */; };
 		0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711666B1AC5FB0C003CA473 /* PKNotification.swift */; };
 		0711667C1AC60AD9003CA473 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; };
 		0711667D1AC60AD9003CA473 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialSignUpViewController.swift; sourceTree = "<group>"; };
 		0711666B1AC5FB0C003CA473 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
 		0711666D1AC60A93003CA473 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		071166811AC60CBF003CA473 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
+				070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */,
 				071166811AC60CBF003CA473 /* SwiftyJSON.swift */,
 				0711666B1AC5FB0C003CA473 /* PKNotification.swift */,
 				07442B4D1AC100D000C51939 /* MainViewController.swift */,
@@ -454,6 +457,7 @@
 				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
 				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
 				0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */,
+				070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */,
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
 				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
 			);
