@@ -6,10 +6,16 @@
 //  Copyright (c) 2015 Carlos Ramirez. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 
 class InitialSignUpViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: DesignableTextField!
+    @IBOutlet weak var passwordTextField: DesignableTextField!
+    @IBOutlet weak var getStartedButton: DesignableButton!
+    var registerEndPoint = "https://matefix.herokuapp.com/users/register"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +25,42 @@ class InitialSignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func getStartedButton(sender: DesignableButton) {
+        
+        getStartedButton.enabled = false
+        PKNotification.loading(true)  // show loading view.
+        var email = emailTextField.text
+        var password = passwordTextField.text
+        
+        
+        var params = ["email":email, "password":password] as Dictionary<String,String>
+        
+        
+        
+        
+        Alamofire.request(.POST , registerEndPoint, parameters: params, encoding: .JSON )
+            .responseJSON { (request, response, data, error) in
+                if let anError = error
+                {
+                    // got an error in getting the data, need to handle it
+                    println("error calling POST")
+                    println(error)
+                }
+                else if let data: AnyObject = data
+                {
+                    // handle the results as JSON, without a bunch of nested if loops
+                    let post = JSON(data)
+                    // to make sure it posted, print the results
+                    println("The post is: " + post.description)
+                    
+                    PKNotification.loading(false) // hide loading view.
+                    self.performSegueWithIdentifier("verificationCodeSegue", sender: nil)
+                }
+        
+        }
+        
     }
     
 

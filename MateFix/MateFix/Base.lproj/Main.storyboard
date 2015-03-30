@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="739" y="41"/>
         </scene>
-        <!--View Controller-->
+        <!--Initial Sign Up View Controller-->
         <scene sceneID="hBS-AD-R8H">
             <objects>
-                <viewController id="u8a-Vr-1xA" sceneMemberID="viewController">
+                <viewController id="u8a-Vr-1xA" customClass="InitialSignUpViewController" customModule="MateFix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KOx-IO-1iD"/>
                         <viewControllerLayoutGuide type="bottom" id="yHC-l1-yeX"/>
@@ -191,7 +191,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="1n7-4s-xJb" kind="presentation" modalTransitionStyle="crossDissolve" id="1E1-pf-MpW"/>
+                                    <action selector="getStartedButton:" destination="u8a-Vr-1xA" eventType="touchUpInside" id="yWm-zY-x8k"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-Hj-WAY" customClass="DesignableTextField" customModule="MateFix" customModuleProvider="target">
@@ -238,6 +238,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WWY-Hj-WAY" id="CRA-fF-BbV"/>
+                        <outlet property="getStartedButton" destination="rFC-Su-O8l" id="Wmf-jQ-Aba"/>
+                        <outlet property="passwordTextField" destination="LNh-kN-Amc" id="dx9-Ai-CSG"/>
+                        <segue destination="1n7-4s-xJb" kind="show" identifier="verificationCodeSegue" id="dKE-Tn-106"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1o-4L-HAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -800,6 +806,6 @@
         <image name="keyIcon" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fF2-E4-c55"/>
+        <segue reference="GYi-HM-zp0"/>
     </inferredMetricsTieBreakers>
 </document>
