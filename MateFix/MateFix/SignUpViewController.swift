@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: DesignableTextField!
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var signUpButton: DesignableButton!
+    
     var registerEndPoint = "https://matefix.herokuapp.com/users/register"
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -87,6 +88,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction func signUpButton(sender: DesignableButton) {
         
+        self.view.userInteractionEnabled = false
         PKNotification.loading(true)  // show loading view.
         var email = emailTextField.text
         var password = passwordTextField.text
@@ -114,6 +116,7 @@ class SignUpViewController: UIViewController {
                 // to make sure it posted, print the results
                 println("The post is: " + post.description)
                 PKNotification.loading(false) // hide loading view.
+                self.view.userInteractionEnabled = true
             }
         }
         

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
+    @IBOutlet weak var loginButton: DesignableButton!
+    let loginEndpoint = "https://matefix.herokuapp.com/oauth/token"
     
     
     
@@ -26,6 +29,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loginButton(sender: AnyObject) {
+        var email = emailTextField.text
+        var pass = passwordTextField.text
+        
+        let params = ["email" : email , "password" : pass]
+        
+        Alamofire.request(.POST, loginEndpoint, parameters: params, encoding: .JSON)
+            .responseJSON{(request, response, data, error) in
+                if let anError = error {
+                    println("error")
+                    println(error)
+                }
+                else if let data: AnyObject = data
+                {
+                    let post = JSON(data)
+                    println(post.description)
+                }
+        }
+    }
 
     /*
     // MARK: - Navigation

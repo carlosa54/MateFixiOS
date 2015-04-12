@@ -14,6 +14,7 @@
 		071166821AC60CBF003CA473 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071166811AC60CBF003CA473 /* SwiftyJSON.swift */; };
 		07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07442B4D1AC100D000C51939 /* MainViewController.swift */; };
 		074C6B5A1AC247FE00709BC5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C6B591AC247FE00709BC5 /* SignUpViewController.swift */; };
+		0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */; };
 		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
 		07872DC51AB7366800190F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC31AB7366800190F5C /* Main.storyboard */; };
 		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
@@ -116,6 +117,7 @@
 		071166811AC60CBF003CA473 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074C6B591AC247FE00709BC5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DBE1AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DBF1AB7366800190F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -210,12 +212,11 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
-				071166811AC60CBF003CA473 /* SwiftyJSON.swift */,
-				0711666B1AC5FB0C003CA473 /* PKNotification.swift */,
 				07442B4D1AC100D000C51939 /* MainViewController.swift */,
 				070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */,
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				074C6B591AC247FE00709BC5 /* SignUpViewController.swift */,
+				0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */,
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
 				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
@@ -227,6 +228,8 @@
 		07872DBD1AB7366800190F5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0711666B1AC5FB0C003CA473 /* PKNotification.swift */,
+				071166811AC60CBF003CA473 /* SwiftyJSON.swift */,
 				07872DBF1AB7366800190F5C /* AppDelegate.swift */,
 				07872DBE1AB7366800190F5C /* Info.plist */,
 			);
@@ -459,6 +462,7 @@
 				0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */,
 				070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */,
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
+				0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */,
 				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
