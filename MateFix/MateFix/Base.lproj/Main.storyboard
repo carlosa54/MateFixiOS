@@ -47,7 +47,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.30000001192092896" contentMode="scaleAspectFit" image="A683CD28-EB79-4AF6-9EC9-AC764053C717" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-zG-8hX">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.30000001192092896" contentMode="scaleAspectFit" image="EF810B38-8AEA-4277-AD48-5504385E6338" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-zG-8hX">
                                         <rect key="frame" x="0.0" y="30" width="73" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="3Tk-bn-QMm"/>
@@ -84,7 +84,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999998807907104" contentMode="scaleAspectFit" image="3CCCF1F6-07DF-4401-8D36-F54A1C822C1C" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-oQ-Ahl">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999998807907104" contentMode="scaleAspectFit" image="15600405-3EBD-4A68-A9B2-DA80396744BC" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-oQ-Ahl">
                                         <rect key="frame" x="25" y="50" width="22" height="78"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="22" id="Smm-09-eDX"/>
@@ -684,7 +684,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3CCCF1F6-07DF-4401-8D36-F54A1C822C1C" width="128" height="128">
+        <image name="15600405-3EBD-4A68-A9B2-DA80396744BC" width="128" height="128">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
@@ -1848,7 +1848,7 @@ AAEOQAABDkMAAQ5IAAEOVwABDlsAAQ5iAAEOagABDncAAQ58AAEOfgABDoAAAQ6FAAEOjQABDpAAAQ6V
 AAEOnQABDqAAAQ6yAAEOtQABDroAAAAAAAAEAQAAAAAAAAA/AAAAAAAAAAAAAAAAAAEOvA
 </mutableData>
         </image>
-        <image name="A683CD28-EB79-4AF6-9EC9-AC764053C717" width="128" height="128">
+        <image name="EF810B38-8AEA-4277-AD48-5504385E6338" width="128" height="128">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
