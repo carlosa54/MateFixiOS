@@ -9,6 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
 
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -19,17 +20,21 @@ class MainViewController: UIViewController {
     
     @IBAction func didChangeValue(sender: UIPageControl) {
         
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool){
+        self.navigationController?.navigationBarHidden = true
     }
     
 

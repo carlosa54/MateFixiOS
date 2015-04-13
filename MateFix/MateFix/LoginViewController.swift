@@ -29,6 +29,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool){
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     @IBAction func loginButton(sender: AnyObject) {
         var email = emailTextField.text
         var pass = passwordTextField.text
@@ -47,6 +51,8 @@ class LoginViewController: UIViewController {
                     println(post.description)
                 }
         }
+        
+
     }
 
     /*
