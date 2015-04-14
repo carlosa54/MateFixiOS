@@ -30,13 +30,16 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
-        return UIStatusBarAnimation.Fade
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool){
+        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColorFromRGB(0xF5A623)
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
     }
     
 //    func post(params: NSDictionary, url: String, postCompleted : (succeeded: Bool, msg: String) -> ()){

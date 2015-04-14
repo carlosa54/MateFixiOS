@@ -31,9 +31,6 @@ class ForgotPassViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
-        return UIStatusBarAnimation.Fade
-    }
 
     @IBAction func sendButon(sender: AnyObject) {
        
