@@ -20,6 +20,7 @@ class SignUpViewController: UIViewController {
     
     var registerEndPoint = "https://matefix.herokuapp.com/users/register"
     
+    
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
@@ -99,16 +100,15 @@ class SignUpViewController: UIViewController {
         PKNotification.loading(true)  // show loading view.
         var email = emailTextField.text
         var password = passwordTextField.text
-        var firstName = nameTextField.text
-        var lastName = lastNameTextField.text
         
+        var user = User(email: email, password: password)
         
-        var params = ["email":email, "password":password, "first_name":firstName, "last_name": lastName, "about_me": "", "street_1": "Testing 101", "country": "PR", "city": "test", "zip_code": "00667"] as Dictionary<String,String>
+//        var params = ["email":email, "password":password, "first_name":firstName, "last_name": lastName, "about_me": "", "street_1": "Testing 101", "country": "PR", "city": "test", "zip_code": "00667"] as Dictionary<String,String>
         
             signUpButton.enabled = false
         
         
-        Alamofire.request(.POST , registerEndPoint, parameters: params, encoding: .JSON )
+        Alamofire.request(.POST , registerEndPoint, parameters: user.toDictionary(), encoding: .JSON )
         .responseJSON { (request, response, data, error) in
             if let anError = error
             {
