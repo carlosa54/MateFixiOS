@@ -8,15 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */; };
-		0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711666B1AC5FB0C003CA473 /* PKNotification.swift */; };
 		0711667C1AC60AD9003CA473 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; };
 		0711667D1AC60AD9003CA473 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		071166821AC60CBF003CA473 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071166811AC60CBF003CA473 /* SwiftyJSON.swift */; };
 		072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072285BA1AE1758A00507978 /* MateFixApi.swift */; };
 		07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07442B4D1AC100D000C51939 /* MainViewController.swift */; };
 		074C6B5A1AC247FE00709BC5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C6B591AC247FE00709BC5 /* SignUpViewController.swift */; };
 		074F769E1AE582F600F7AB60 /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */; };
-		074F76A31AE5836400F7AB60 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F76A21AE5836400F7AB60 /* ResponseCollectionSerializable.swift */; };
 		074F76A61AE5840D00F7AB60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F76A51AE5840D00F7AB60 /* User.swift */; };
 		0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */; };
 		07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DBF1AB7366800190F5C /* AppDelegate.swift */; };
@@ -24,6 +21,7 @@
 		07872DC71AB7366800190F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC61AB7366800190F5C /* Images.xcassets */; };
 		07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC81AB7366800190F5C /* LaunchScreen.xib */; };
 		07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DD51AB7366800190F5C /* MateFixTests.swift */; };
+		07CE85061AE861DA00AFE480 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE85051AE861DA00AFE480 /* SwiftyJSON.swift */; };
 		4054655C1ABCC18B00D2832F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655B1ABCC18B00D2832F /* LoginViewController.swift */; };
 		4054657B1ABCC4A200D2832F /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655E1ABCC4A200D2832F /* AsyncButton.swift */; };
 		4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655F1ABCC4A200D2832F /* AsyncImageView.swift */; };
@@ -116,14 +114,11 @@
 
 /* Begin PBXFileReference section */
 		070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialSignUpViewController.swift; sourceTree = "<group>"; };
-		0711666B1AC5FB0C003CA473 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
 		0711666D1AC60A93003CA473 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
-		071166811AC60CBF003CA473 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		072285BA1AE1758A00507978 /* MateFixApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateFixApi.swift; sourceTree = "<group>"; };
 		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074C6B591AC247FE00709BC5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
-		074F76A21AE5836400F7AB60 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		074F76A51AE5840D00F7AB60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		07872DBA1AB7366800190F5C /* MateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +130,7 @@
 		07872DCF1AB7366800190F5C /* MateFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07872DD41AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DD51AB7366800190F5C /* MateFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateFixTests.swift; sourceTree = "<group>"; };
+		07CE85051AE861DA00AFE480 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		4054655B1ABCC18B00D2832F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4054655E1ABCC4A200D2832F /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		4054655F1ABCC4A200D2832F /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
@@ -200,7 +196,6 @@
 		074F76A41AE5839C00F7AB60 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				074F76A21AE5836400F7AB60 /* ResponseCollectionSerializable.swift */,
 				074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */,
 			);
 			name = Networking;
@@ -248,8 +243,7 @@
 		07872DBD1AB7366800190F5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0711666B1AC5FB0C003CA473 /* PKNotification.swift */,
-				071166811AC60CBF003CA473 /* SwiftyJSON.swift */,
+				07CE85051AE861DA00AFE480 /* SwiftyJSON.swift */,
 				07872DBF1AB7366800190F5C /* AppDelegate.swift */,
 				07872DBE1AB7366800190F5C /* Info.plist */,
 			);
@@ -457,12 +451,12 @@
 				4054658F1ABCC4A200D2832F /* SpringImageView.swift in Sources */,
 				405465911ABCC4A200D2832F /* SpringTextField.swift in Sources */,
 				072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */,
+				07CE85061AE861DA00AFE480 /* SwiftyJSON.swift in Sources */,
 				07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */,
 				4054657D1ABCC4A200D2832F /* BlurView.swift in Sources */,
 				405465901ABCC4A200D2832F /* SpringLabel.swift in Sources */,
 				4054657B1ABCC4A200D2832F /* AsyncButton.swift in Sources */,
 				405465831ABCC4A200D2832F /* DesignableTextView.swift in Sources */,
-				071166821AC60CBF003CA473 /* SwiftyJSON.swift in Sources */,
 				4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */,
 				4054657E1ABCC4A200D2832F /* DesignableButton.swift in Sources */,
 				07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */,
@@ -474,7 +468,6 @@
 				405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */,
 				405465841ABCC4A200D2832F /* DesignableView.swift in Sources */,
 				405465821ABCC4A200D2832F /* DesignableTextField.swift in Sources */,
-				074F76A31AE5836400F7AB60 /* ResponseCollectionSerializable.swift in Sources */,
 				405465811ABCC4A200D2832F /* DesignableTabBarController.swift in Sources */,
 				405465921ABCC4A200D2832F /* SpringTextView.swift in Sources */,
 				405465871ABCC4A200D2832F /* KeyboardLayoutConstraint.swift in Sources */,
@@ -482,7 +475,6 @@
 				4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */,
 				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
 				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
-				0711666C1AC5FB0C003CA473 /* PKNotification.swift in Sources */,
 				070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */,
 				074F769E1AE582F600F7AB60 /* ResponseObjectSerializable.swift in Sources */,
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,

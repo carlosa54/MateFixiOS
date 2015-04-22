@@ -21,7 +21,7 @@ class SignUpViewController: UIViewController {
     var registerEndPoint = "https://matefix.herokuapp.com/users/register"
     
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
@@ -45,8 +45,7 @@ class SignUpViewController: UIViewController {
     
 //    func post(params: NSDictionary, url: String, postCompleted : (succeeded: Bool, msg: String) -> ()){
 //        
-//        PKNotification.loading(true)  // show loading view.
-//        
+//
 //        var request = NSMutableURLRequest(URL: NSURL(string: url)!)
 //        var session = NSURLSession.sharedSession()
 //        request.HTTPMethod = "POST"
@@ -79,7 +78,6 @@ class SignUpViewController: UIViewController {
 //                // check and make sure that json has a value using optional binding.
 //                if let parseJSON = json {
 //                    // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-//                      PKNotification.loading(false) // hide loading view.
 //                      postCompleted(succeeded: true, msg: "Logged in")
 //                }
 //                else {
@@ -97,7 +95,6 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpButton(sender: DesignableButton) {
         
         self.view.userInteractionEnabled = false
-        PKNotification.loading(true)  // show loading view.
         var email = emailTextField.text
         var password = passwordTextField.text
         
@@ -122,7 +119,6 @@ class SignUpViewController: UIViewController {
                 let post = JSON(data)
                 // to make sure it posted, print the results
                 println("The post is: " + post.description)
-                PKNotification.loading(false) // hide loading view.
                 self.view.userInteractionEnabled = true
             }
         }

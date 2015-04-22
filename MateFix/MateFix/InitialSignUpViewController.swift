@@ -30,7 +30,6 @@ class InitialSignUpViewController: UIViewController {
     @IBAction func getStartedButton(sender: DesignableButton) {
         
         getStartedButton.enabled = false
-        PKNotification.loading(true)  // show loading view.
         self.view.userInteractionEnabled = false
         var email = emailTextField.text
         var password = passwordTextField.text
@@ -56,7 +55,6 @@ class InitialSignUpViewController: UIViewController {
                     // to make sure it posted, print the results
                     println("The post is: " + post.description)
                     
-                    PKNotification.loading(false) // hide loading view.
                     self.view.userInteractionEnabled = true
                     self.performSegueWithIdentifier("verificationCodeSegue", sender: nil)
                 }

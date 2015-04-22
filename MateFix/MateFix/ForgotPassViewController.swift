@@ -50,7 +50,6 @@ class ForgotPassViewController: UIViewController {
                     let post = JSON(data)
                     // to make sure it posted, print the results
                     println("The post is: " + post.description)
-                    PKNotification.loading(false) // hide loading view.
                     self.view.userInteractionEnabled = true
                 }
         }

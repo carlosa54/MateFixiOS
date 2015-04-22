@@ -32,7 +32,7 @@ class User : ResponseObjectSerializable {
         self.password = password
     }
     
-    required init?(response: NSHTTPURLResponse, representation: AnyObject) {
+    @objc required init?(response: NSHTTPURLResponse, representation: AnyObject) {
         self.id = representation.valueForKey("id") as? Int
         self.email = representation.valueForKey("email") as? String
         self.password = representation.valueForKey("password") as? String
