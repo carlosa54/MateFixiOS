@@ -8,7 +8,7 @@
 
 import Alamofire
 
-class User : ResponseObjectSerializable {
+final class User : ResponseObjectSerializable, ResponseCollectionSerializable {
     
     var id: Int?
     var email: String?
@@ -65,9 +65,17 @@ class User : ResponseObjectSerializable {
     
     func toDictionary() -> Dictionary<String, String> {
         
-        var json = ["email":email!, "password":password!] as Dictionary<String, String>
+        var dic = ["email":email!, "password":password!] as Dictionary<String, String>
 
-       return json
+       return dic
+    }
+    
+    @objc static func collection(#response: NSHTTPURLResponse, representation: AnyObject) -> [User] {
+        var users = [User]()
+        for usersRep in representation.valueForKeyPath("results") as! [AnyObject] {
+            users.append(User(response: response, representation: usersRep)!)
+        }
+        return users
     }
     
     

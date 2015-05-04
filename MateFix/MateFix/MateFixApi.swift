@@ -12,7 +12,7 @@ struct MatefixApi {
     
     // Doc: http://matefix.herokuapp.com/docs/
     
-    private static let hostURL = "http://matefix.herokuapp.com/"
+    private static let hostURL = "http://matefix.herokuapp.com"
     
     private enum Paths: Printable {
         case Token
@@ -35,4 +35,28 @@ struct MatefixApi {
     }
     
     
+    
+    
+//    static func signUpUser(email: String ,_ password: String) {
+//        var usuario = User(email: email, password: password)
+//        let registerEndPoint = hostURL + Paths.Register.description
+//
+//        println(registerEndPoint)
+//        
+//        Alamofire.request(.POST , registerEndPoint, parameters: usuario.toDictionary())
+//            .responseObject { (request, response, user: User?, error) in
+//                if let anError = error
+//                {
+//                    // got an error in getting the data, need to handle it
+//                    println("error calling POST")
+//                    println(error)
+//                }
+//                else if let user: User = user
+//                {
+//                    // to make sure it posted, print the results
+//                    println(user.email)
+//                }
+//        }
+//    }
 }
+

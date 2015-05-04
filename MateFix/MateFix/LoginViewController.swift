@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -56,6 +58,12 @@ class LoginViewController: UIViewController {
         
 
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 
     /*
     // MARK: - Navigation

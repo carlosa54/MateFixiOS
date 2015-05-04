@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */; };
+		070C51281AF071BD00C1962C /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */; };
 		0711667C1AC60AD9003CA473 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; };
 		0711667D1AC60AD9003CA473 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072285BA1AE1758A00507978 /* MateFixApi.swift */; };
@@ -113,7 +113,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialSignUpViewController.swift; sourceTree = "<group>"; };
+		070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		0711666D1AC60A93003CA473 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		072285BA1AE1758A00507978 /* MateFixApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateFixApi.swift; sourceTree = "<group>"; };
 		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */,
+				070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -227,7 +228,6 @@
 				074F76A51AE5840D00F7AB60 /* User.swift */,
 				072285BA1AE1758A00507978 /* MateFixApi.swift */,
 				07442B4D1AC100D000C51939 /* MainViewController.swift */,
-				070038A31AC8E31C00D66803 /* InitialSignUpViewController.swift */,
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				074C6B591AC247FE00709BC5 /* SignUpViewController.swift */,
 				0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */,
@@ -467,6 +467,7 @@
 				405465881ABCC4A200D2832F /* LoadingView.swift in Sources */,
 				405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */,
 				405465841ABCC4A200D2832F /* DesignableView.swift in Sources */,
+				070C51281AF071BD00C1962C /* ResponseCollectionSerializable.swift in Sources */,
 				405465821ABCC4A200D2832F /* DesignableTextField.swift in Sources */,
 				405465811ABCC4A200D2832F /* DesignableTabBarController.swift in Sources */,
 				405465921ABCC4A200D2832F /* SpringTextView.swift in Sources */,
@@ -475,7 +476,6 @@
 				4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */,
 				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
 				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
-				070038A41AC8E31C00D66803 /* InitialSignUpViewController.swift in Sources */,
 				074F769E1AE582F600F7AB60 /* ResponseObjectSerializable.swift in Sources */,
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
 				0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */,

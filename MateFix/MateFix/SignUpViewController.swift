@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: DesignableTextField!
     @IBOutlet weak var lastNameTextField: DesignableTextField!
@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: DesignableButton!
     
     var registerEndPoint = "https://matefix.herokuapp.com/users/register"
-    
+        
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
@@ -27,6 +27,8 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
        
         // Do any additional setup after loading the view.
     }
@@ -90,7 +92,11 @@ class SignUpViewController: UIViewController {
 //        
 //        task.resume()
 //    }
-    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
+
 
     @IBAction func signUpButton(sender: DesignableButton) {
         
@@ -104,59 +110,35 @@ class SignUpViewController: UIViewController {
         
             signUpButton.enabled = false
         
+//            MatefixApi.signUpUser(email, password)
         
-        Alamofire.request(.POST , registerEndPoint, parameters: user.toDictionary(), encoding: .JSON )
-        .responseJSON { (request, response, data, error) in
+        Alamofire.request(.POST , registerEndPoint, parameters: user.toDictionary())
+            .responseObject { (request, response, user: User?, error) in
             if let anError = error
             {
                 // got an error in getting the data, need to handle it
                 println("error calling POST")
                 println(error)
             }
-            else if let data: AnyObject = data
+            else if let user: User = user
             {
-                // handle the results as JSON, without a bunch of nested if loops
-                let post = JSON(data)
                 // to make sure it posted, print the results
-                println("The post is: " + post.description)
+                println(user.email)
                 self.view.userInteractionEnabled = true
-            }
+                }
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-//            post(params, url: "https://matefix.herokuapp.com/users/register") { (succeeded: Bool, msg: String) -> () in
-//            var alert = UIAlertView(title: "Success!", message: msg, delegate: nil, cancelButtonTitle: "Okay.")
-//            if(succeeded) {
-//                alert.title = "Success!"
-//                alert.message = msg
-//            }
-//            else {
-//                alert.title = "Failed : ("
-//                alert.message = msg
-//            }
-//        
-//            // Move to the UI thread
-//            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//                // Show the alert
-//                alert.show()
-//            })
+    
+// TESTING USER COLLECTIONS
+//        Alamofire.request(.GET, registerEndPoint)
+//            .responseCollection { (_ , _ , nestedUser: [User]? , _) -> Void in
+//                for users in nestedUser! {
+//                    println(users.email)
+//                }
 //        }
         
         
+
         
         
         
