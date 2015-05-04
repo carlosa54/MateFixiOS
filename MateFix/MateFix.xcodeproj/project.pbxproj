@@ -22,6 +22,7 @@
 		07872DCA1AB7366800190F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07872DC81AB7366800190F5C /* LaunchScreen.xib */; };
 		07872DD61AB7366800190F5C /* MateFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872DD51AB7366800190F5C /* MateFixTests.swift */; };
 		07CE85061AE861DA00AFE480 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE85051AE861DA00AFE480 /* SwiftyJSON.swift */; };
+		4039C4311AF7FDE70071206E /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039C4301AF7FDE70071206E /* ProfileTableViewController.swift */; };
 		4054655C1ABCC18B00D2832F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655B1ABCC18B00D2832F /* LoginViewController.swift */; };
 		4054657B1ABCC4A200D2832F /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655E1ABCC4A200D2832F /* AsyncButton.swift */; };
 		4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054655F1ABCC4A200D2832F /* AsyncImageView.swift */; };
@@ -131,6 +132,7 @@
 		07872DD41AB7366800190F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07872DD51AB7366800190F5C /* MateFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateFixTests.swift; sourceTree = "<group>"; };
 		07CE85051AE861DA00AFE480 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		4039C4301AF7FDE70071206E /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		4054655B1ABCC18B00D2832F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4054655E1ABCC4A200D2832F /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		4054655F1ABCC4A200D2832F /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				074C6B591AC247FE00709BC5 /* SignUpViewController.swift */,
 				0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */,
+				4039C4301AF7FDE70071206E /* ProfileTableViewController.swift */,
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
 				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
@@ -480,6 +483,7 @@
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
 				0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */,
 				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
+				4039C4311AF7FDE70071206E /* ProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
