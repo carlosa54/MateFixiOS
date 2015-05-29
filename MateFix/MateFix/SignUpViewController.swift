@@ -108,25 +108,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
 //        var params = ["email":email, "password":password, "first_name":firstName, "last_name": lastName, "about_me": "", "street_1": "Testing 101", "country": "PR", "city": "test", "zip_code": "00667"] as Dictionary<String,String>
         
-            signUpButton.enabled = false
+        signUpButton.enabled = false
         
-//            MatefixApi.signUpUser(email, password)
+        MatefixApi.signUpUser(user.email!, user.password!)
         
-        Alamofire.request(.POST , registerEndPoint, parameters: user.toDictionary())
-            .responseObject { (request, response, user: User?, error) in
-            if let anError = error
-            {
-                // got an error in getting the data, need to handle it
-                println("error calling POST")
-                println(error)
-            }
-            else if let user: User = user
-            {
-                // to make sure it posted, print the results
-                println(user.email)
-                self.view.userInteractionEnabled = true
-                }
-        }
+//        Alamofire.request(.POST , registerEndPoint, parameters: user.toDictionary())
+//            .responseObject { (request, response, user: User?, error) in
+//            if let anError = error
+//            {
+//                // got an error in getting the data, need to handle it
+//                println("error calling POST")
+//                println(error)
+//            }
+//            else if let user: User = user
+//            {
+//                // to make sure it posted, print the results
+//                println(user.email)
+//                self.view.userInteractionEnabled = true
+//                }
+//        }
         
     
 // TESTING USER COLLECTIONS
