@@ -19,9 +19,10 @@ final class User : ResponseObjectSerializable, ResponseCollectionSerializable {
     var country: String?
     var city: String?
     var zipCode: String?
-    var profilePic: String?
+    var profilePic: NSURL?
     var overallRating: Float?
-    var createdAt: NSDate?
+    var createdAt: String?
+    
     
     init(){
         
@@ -42,12 +43,12 @@ final class User : ResponseObjectSerializable, ResponseCollectionSerializable {
         self.country = representation.valueForKey("country") as? String
         self.city = representation.valueForKey("city") as? String
         self.zipCode = representation.valueForKey("zip_code") as? String
-        self.profilePic = representation.valueForKey("profile_pic") as? String
+        self.profilePic = representation.valueForKey("profile_pic") as? NSURL
         self.overallRating = representation.valueForKey("overall_rating") as? Float
-        self.createdAt = representation.valueForKey("created_at") as? NSDate
+        self.createdAt = representation.valueForKey("created_at") as? String
     }
     
-    init(id: Int, email: String, password: String, firstName: String, lastName: String, aboutMe: String, country: String, city: String, zipCode: String, profilePic: String, overallRating: Float, createdAt: NSDate){
+    init(id: Int, email: String, password: String, firstName: String, lastName: String, aboutMe: String, country: String, city: String, zipCode: String, profilePic: NSURL, overallRating: Float, createdAt: String){
         
         self.id = id
         self.email = email

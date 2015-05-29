@@ -11,6 +11,14 @@
 		0711667C1AC60AD9003CA473 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; };
 		0711667D1AC60AD9003CA473 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072285BA1AE1758A00507978 /* MateFixApi.swift */; };
+		0729493A1AF9411B008CBFAB /* TegStarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949331AF9411B008CBFAB /* TegStarFillMode.swift */; };
+		0729493B1AF9411B008CBFAB /* TegStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949341AF9411B008CBFAB /* TegStarRating.swift */; };
+		0729493C1AF9411B008CBFAB /* TegStarRatingLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949351AF9411B008CBFAB /* TegStarRatingLayerHelper.swift */; };
+		0729493D1AF9411B008CBFAB /* TegStarRatingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949361AF9411B008CBFAB /* TegStarRatingSettings.swift */; };
+		0729493E1AF9411B008CBFAB /* TegStarRatingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949371AF9411B008CBFAB /* TegStarRatingSize.swift */; };
+		0729493F1AF9411B008CBFAB /* TegStarRatingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949381AF9411B008CBFAB /* TegStarRatingText.swift */; };
+		072949401AF9411B008CBFAB /* TegStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072949391AF9411B008CBFAB /* TegStarRatingView.swift */; };
+		073166D21AF811F7002E725F /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073166D11AF811F7002E725F /* ProfileTableViewCell.swift */; };
 		07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07442B4D1AC100D000C51939 /* MainViewController.swift */; };
 		074C6B5A1AC247FE00709BC5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C6B591AC247FE00709BC5 /* SignUpViewController.swift */; };
 		074F769E1AE582F600F7AB60 /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */; };
@@ -117,6 +125,14 @@
 		070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		0711666D1AC60A93003CA473 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		072285BA1AE1758A00507978 /* MateFixApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateFixApi.swift; sourceTree = "<group>"; };
+		072949331AF9411B008CBFAB /* TegStarFillMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarFillMode.swift; sourceTree = "<group>"; };
+		072949341AF9411B008CBFAB /* TegStarRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRating.swift; sourceTree = "<group>"; };
+		072949351AF9411B008CBFAB /* TegStarRatingLayerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRatingLayerHelper.swift; sourceTree = "<group>"; };
+		072949361AF9411B008CBFAB /* TegStarRatingSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRatingSettings.swift; sourceTree = "<group>"; };
+		072949371AF9411B008CBFAB /* TegStarRatingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRatingSize.swift; sourceTree = "<group>"; };
+		072949381AF9411B008CBFAB /* TegStarRatingText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRatingText.swift; sourceTree = "<group>"; };
+		072949391AF9411B008CBFAB /* TegStarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStarRatingView.swift; sourceTree = "<group>"; };
+		073166D11AF811F7002E725F /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		07442B4D1AC100D000C51939 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074C6B591AC247FE00709BC5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		074F769D1AE582F600F7AB60 /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
@@ -195,6 +211,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		072949281AF93A7D008CBFAB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4039C4301AF7FDE70071206E /* ProfileTableViewController.swift */,
+				073166D11AF811F7002E725F /* ProfileTableViewCell.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		072949321AF940EC008CBFAB /* StarsReview */ = {
+			isa = PBXGroup;
+			children = (
+				072949331AF9411B008CBFAB /* TegStarFillMode.swift */,
+				072949341AF9411B008CBFAB /* TegStarRating.swift */,
+				072949351AF9411B008CBFAB /* TegStarRatingLayerHelper.swift */,
+				072949361AF9411B008CBFAB /* TegStarRatingSettings.swift */,
+				072949371AF9411B008CBFAB /* TegStarRatingSize.swift */,
+				072949381AF9411B008CBFAB /* TegStarRatingText.swift */,
+				072949391AF9411B008CBFAB /* TegStarRatingView.swift */,
+			);
+			name = StarsReview;
+			sourceTree = "<group>";
+		};
 		074F76A41AE5839C00F7AB60 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,10 +272,11 @@
 				4054655B1ABCC18B00D2832F /* LoginViewController.swift */,
 				074C6B591AC247FE00709BC5 /* SignUpViewController.swift */,
 				0760D6F71ADAFD7900B487CF /* ForgotPassViewController.swift */,
-				4039C4301AF7FDE70071206E /* ProfileTableViewController.swift */,
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
 				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
+				072949321AF940EC008CBFAB /* StarsReview */,
+				072949281AF93A7D008CBFAB /* Profile */,
 				074F76A41AE5839C00F7AB60 /* Networking */,
 				07872DBD1AB7366800190F5C /* Supporting Files */,
 			);
@@ -450,10 +490,12 @@
 				405465951ABCC4A200D2832F /* TransitionZoom.swift in Sources */,
 				405465931ABCC4A200D2832F /* SpringView.swift in Sources */,
 				4054655C1ABCC18B00D2832F /* LoginViewController.swift in Sources */,
+				0729493F1AF9411B008CBFAB /* TegStarRatingText.swift in Sources */,
 				4054658A1ABCC4A200D2832F /* Misc.swift in Sources */,
 				4054658F1ABCC4A200D2832F /* SpringImageView.swift in Sources */,
 				405465911ABCC4A200D2832F /* SpringTextField.swift in Sources */,
 				072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */,
+				073166D21AF811F7002E725F /* ProfileTableViewCell.swift in Sources */,
 				07CE85061AE861DA00AFE480 /* SwiftyJSON.swift in Sources */,
 				07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */,
 				4054657D1ABCC4A200D2832F /* BlurView.swift in Sources */,
@@ -465,13 +507,17 @@
 				07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */,
 				4054658E1ABCC4A200D2832F /* SpringButton.swift in Sources */,
 				4054658C1ABCC4A200D2832F /* Spring.swift in Sources */,
+				0729493B1AF9411B008CBFAB /* TegStarRating.swift in Sources */,
 				074F76A61AE5840D00F7AB60 /* User.swift in Sources */,
 				405465801ABCC4A200D2832F /* DesignableLabel.swift in Sources */,
 				405465881ABCC4A200D2832F /* LoadingView.swift in Sources */,
 				405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */,
+				0729493E1AF9411B008CBFAB /* TegStarRatingSize.swift in Sources */,
 				405465841ABCC4A200D2832F /* DesignableView.swift in Sources */,
 				070C51281AF071BD00C1962C /* ResponseCollectionSerializable.swift in Sources */,
+				072949401AF9411B008CBFAB /* TegStarRatingView.swift in Sources */,
 				405465821ABCC4A200D2832F /* DesignableTextField.swift in Sources */,
+				0729493A1AF9411B008CBFAB /* TegStarFillMode.swift in Sources */,
 				405465811ABCC4A200D2832F /* DesignableTabBarController.swift in Sources */,
 				405465921ABCC4A200D2832F /* SpringTextView.swift in Sources */,
 				405465871ABCC4A200D2832F /* KeyboardLayoutConstraint.swift in Sources */,
@@ -483,6 +529,8 @@
 				405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */,
 				0760D6F81ADAFD7900B487CF /* ForgotPassViewController.swift in Sources */,
 				405465851ABCC4A200D2832F /* ImageLoader.swift in Sources */,
+				0729493C1AF9411B008CBFAB /* TegStarRatingLayerHelper.swift in Sources */,
+				0729493D1AF9411B008CBFAB /* TegStarRatingSettings.swift in Sources */,
 				4039C4311AF7FDE70071206E /* ProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
