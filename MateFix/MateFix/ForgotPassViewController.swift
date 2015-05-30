@@ -16,10 +16,6 @@ class ForgotPassViewController: UIViewController {
     let forgotPassEndpoint = "https://matefix.herokuapp.com/users/forgotpass"
     
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

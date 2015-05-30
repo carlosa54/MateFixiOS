@@ -40,10 +40,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButton(sender: AnyObject) {
         var email = emailTextField.text
         var pass = passwordTextField.text
+        if isValidEmail(email) && pass.length >= 6 {
+            let user = User(email: email, password: pass)
         
-        let params = ["email" : email , "password" : pass]
-        
-        Alamofire.request(.POST, loginEndpoint, parameters: params, encoding: .JSON)
+        Alamofire.request(.POST, loginEndpoint, parameters: user.toDictionary(), encoding: .JSON)
             .responseJSON{(request, response, data, error) in
                 if let anError = error {
                     println("error")
@@ -51,11 +51,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 }
                 else if let data: AnyObject = data
                 {
-                    let post = JSON(data)
-                    println(post.description)
+                    let token = JSON(data)
+                    println(token["token"])
                 }
         }
-        
+        } else {
+            var alert = UIAlertController(title: "Incorrect Email", message: "The email or password you entered is not valid, try again.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)        }
 
     }
     
@@ -63,6 +66,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluateWithObject(testStr)
+    }
+    
+
     
 
     /*
