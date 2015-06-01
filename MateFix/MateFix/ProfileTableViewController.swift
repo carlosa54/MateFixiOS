@@ -64,8 +64,7 @@ class ProfileTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.CellReuseIdentifier, forIndexPath: indexPath) as! ProfileTableViewCell
-            cell.user = user
+        
         
         if indexPath.section == 1{
             let aboutCell = tableView.dequeueReusableCellWithIdentifier(Storyboard.aboutMeCell, forIndexPath: indexPath) as! AboutTableViewCell
@@ -79,16 +78,16 @@ class ProfileTableViewController: UITableViewController {
             let reviewsCell = tableView.dequeueReusableCellWithIdentifier(Storyboard.reviewsCell, forIndexPath: indexPath) as! ReviewTableViewCell
             reviewsCell.user = user
             return reviewsCell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.CellReuseIdentifier, forIndexPath: indexPath) as! ProfileTableViewCell
+            cell.user = user
+            
+            return cell
         }
         
 
         // Configure the cell...
         
-        
-        
-        
-
-        return cell
     }
 
 

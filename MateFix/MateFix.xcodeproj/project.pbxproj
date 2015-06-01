@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07067B4D1B1C0DE700693772 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07067B4C1B1C0DE700693772 /* HomeTabBarController.swift */; };
 		070C51281AF071BD00C1962C /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */; };
 		0711667C1AC60AD9003CA473 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; };
 		0711667D1AC60AD9003CA473 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 071166751AC60A93003CA473 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -122,6 +123,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07067B4C1B1C0DE700693772 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		070C51271AF071BD00C1962C /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		0711666D1AC60A93003CA473 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		072285BA1AE1758A00507978 /* MateFixApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateFixApi.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		07872DBC1AB7366800190F5C /* MateFix */ = {
 			isa = PBXGroup;
 			children = (
+				07067B4C1B1C0DE700693772 /* HomeTabBarController.swift */,
 				074F76A51AE5840D00F7AB60 /* User.swift */,
 				072285BA1AE1758A00507978 /* MateFixApi.swift */,
 				07442B4D1AC100D000C51939 /* MainViewController.swift */,
@@ -497,6 +500,7 @@
 				072285BB1AE1758A00507978 /* MateFixApi.swift in Sources */,
 				073166D21AF811F7002E725F /* ProfileTableViewCell.swift in Sources */,
 				07CE85061AE861DA00AFE480 /* SwiftyJSON.swift in Sources */,
+				07067B4D1B1C0DE700693772 /* HomeTabBarController.swift in Sources */,
 				07872DC01AB7366800190F5C /* AppDelegate.swift in Sources */,
 				4054657D1ABCC4A200D2832F /* BlurView.swift in Sources */,
 				405465901ABCC4A200D2832F /* SpringLabel.swift in Sources */,

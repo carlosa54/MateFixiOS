@@ -43,18 +43,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if isValidEmail(email) && pass.length >= 6 {
             let user = User(email: email, password: pass)
         
-        Alamofire.request(.POST, loginEndpoint, parameters: user.toDictionary(), encoding: .JSON)
-            .responseJSON{(request, response, data, error) in
-                if let anError = error {
+            Alamofire.request(.POST, loginEndpoint, parameters: user.toDictionary(), encoding: .JSON)
+                .responseJSON{(request, response, data, error) in
+                    if let anError = error {
                     println("error")
                     println(error)
-                }
-                else if let data: AnyObject = data
-                {
-                    let token = JSON(data)
-                    println(token["token"])
-                }
-        }
+                    }
+                    else if let data: AnyObject = data
+                    {
+                        let token = JSON(data)
+                        println(token["token"])
+                        //self.performSegueWithIdentifier("signInToTab", sender: self)
+                        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+                    }
+            }
+            
+            
+            
         } else {
             var alert = UIAlertController(title: "Incorrect Email", message: "The email or password you entered is not valid, try again.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
