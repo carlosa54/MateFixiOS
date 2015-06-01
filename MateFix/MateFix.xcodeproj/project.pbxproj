@@ -61,6 +61,8 @@
 		405465941ABCC4A200D2832F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465781ABCC4A200D2832F /* TransitionManager.swift */; };
 		405465951ABCC4A200D2832F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405465791ABCC4A200D2832F /* TransitionZoom.swift */; };
 		405465961ABCC4A200D2832F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054657A1ABCC4A200D2832F /* UnwindSegue.swift */; };
+		40C91E1D1B1CB2F3003C67C7 /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C91E1C1B1CB2F3003C67C7 /* ProjectsTableViewController.swift */; };
+		40C91E1F1B1CB330003C67C7 /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C91E1E1B1CB330003C67C7 /* ProjectsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +183,8 @@
 		405465781ABCC4A200D2832F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		405465791ABCC4A200D2832F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		4054657A1ABCC4A200D2832F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		40C91E1C1B1CB2F3003C67C7 /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
+		40C91E1E1B1CB330003C67C7 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +282,7 @@
 				07872DC31AB7366800190F5C /* Main.storyboard */,
 				07872DC61AB7366800190F5C /* Images.xcassets */,
 				07872DC81AB7366800190F5C /* LaunchScreen.xib */,
+				40C91E181B1CB295003C67C7 /* Projects */,
 				072949321AF940EC008CBFAB /* StarsReview */,
 				072949281AF93A7D008CBFAB /* Profile */,
 				074F76A41AE5839C00F7AB60 /* Networking */,
@@ -347,6 +352,15 @@
 				4054657A1ABCC4A200D2832F /* UnwindSegue.swift */,
 			);
 			path = Spring;
+			sourceTree = "<group>";
+		};
+		40C91E181B1CB295003C67C7 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				40C91E1C1B1CB2F3003C67C7 /* ProjectsTableViewController.swift */,
+				40C91E1E1B1CB330003C67C7 /* ProjectsTableViewCell.swift */,
+			);
+			name = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +523,7 @@
 				4054657C1ABCC4A200D2832F /* AsyncImageView.swift in Sources */,
 				4054657E1ABCC4A200D2832F /* DesignableButton.swift in Sources */,
 				07442B4E1AC100D000C51939 /* MainViewController.swift in Sources */,
+				40C91E1F1B1CB330003C67C7 /* ProjectsTableViewCell.swift in Sources */,
 				4054658E1ABCC4A200D2832F /* SpringButton.swift in Sources */,
 				4054658C1ABCC4A200D2832F /* Spring.swift in Sources */,
 				0729493B1AF9411B008CBFAB /* TegStarRating.swift in Sources */,
@@ -527,6 +542,7 @@
 				405465871ABCC4A200D2832F /* KeyboardLayoutConstraint.swift in Sources */,
 				074C6B5A1AC247FE00709BC5 /* SignUpViewController.swift in Sources */,
 				4054657F1ABCC4A200D2832F /* DesignableImageView.swift in Sources */,
+				40C91E1D1B1CB2F3003C67C7 /* ProjectsTableViewController.swift in Sources */,
 				4054658B1ABCC4A200D2832F /* SoundPlayer.swift in Sources */,
 				4054658D1ABCC4A200D2832F /* SpringAnimation.swift in Sources */,
 				074F769E1AE582F600F7AB60 /* ResponseObjectSerializable.swift in Sources */,
